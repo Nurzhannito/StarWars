@@ -1,0 +1,434 @@
+*
+    padding: 0
+    margin: 0
+
+body
+    font-family: 'Roboto', sans-serif
+
+.container
+    margin: 0 auto
+    max-width: 1080px
+
+=xl
+    @media screen and ( max-width: 1245px )
+        @content
+        
+=lg
+    @media screen and (max-width:992px)
+        @content
+=md       
+    @media screen and ( max-width:768px)
+        @content
+
+=sm  
+    @media screen and ( max-width:576px)
+        @content
+
+=xs
+    @media screen and ( max-width: 460px)
+        @content
+        
+            
+%features
+    color: #FFFFFF
+    font-weight: lighter
+
+%weight
+    font-weight: normal
+
+.lower
+    text-transform: lowercase
+
+.stream
+    text-transform: capitalize
+
+.nav-link
+    font-weight: normal
+    font-size: 16px
+    line-height: 16px
+    color: #FFFFFF
+    padding-right: 40px !important
+    display: flex
+    align-items: center
+
+.dropdown
+    .nav-link::before
+        content: ""
+        width: 20px
+        height: 20px
+        display: inline-block
+        background-image: url("../images/Shape.png")
+        background-size: contain
+        margin-right: 10px
+
+.dropdown
+    &-menu
+        display: none
+    &:hover
+        .dropdown-menu
+            display: block
+            background: #373A3C
+            .dropdown-link
+                text-transform: capitalize
+                text-decoration: none
+                &:hover
+                    color: #8DD83D
+
+    .nav-link::after
+        content: ""
+        width: 0
+        height: 0
+        border-style: solid
+        border-width: 6.55px 6px 0 6px
+        border-color: #91DC5A transparent transparent transparent
+        display: inline-block
+        margin-left: 12px
+    .nav-link:hover::after
+        border-color: #FFFFFF transparent transparent transparent
+
+.main-picture
+    max-height: 788px
+    width: 100%
+    position: relative
+    object-fit: fill
+    +md
+        max-height: 900px
+
+.promo-container
+    position: absolute
+    top: 178px
+    left: 60%
+    display: flex
+    justify-content: flex-start
+    +xl
+        top: 158px
+    +lg 
+        top: 50px
+        flex-wrap: wrap
+    +sm 
+        top: 0
+
+    .main-title
+        font-weight: normal
+        font-size: 36px
+        line-height: 42px
+        color: #FFFFFF
+        text-transform: capitalize
+        display: flex
+        +md 
+            font-size: 26px
+        +sm 
+            margin: 0
+
+    .battlefront
+        font-weight: normal
+        font-size: 24px
+        line-height: 28px
+        color: #FFFFFF
+        text-transform: capitalize
+        display: flex
+        +md 
+            font-size: 15px
+        +sm 
+            margin: 0
+
+    .trailer
+        padding: 8px 24px 9px 19px
+        background-color: #8DD83D
+
+    .explore
+        padding: 8px 19px 9px 19px
+        background: #828282 
+
+    .trailer,
+    .explore
+        font-size: 16px
+        line-height: 21px
+        text-decoration: none
+        border-radius: 4px
+        color: #FFFFFF
+        text-transform: capitalize
+        margin-top: 34px
+        margin-right: 13px
+        display: inline-flex
+        +xl
+            flex-wrap: wrap
+        +md
+            font-size: 10px
+            padding: 5px 10px 5px 10px
+            margin-top: 10px
+        +sm 
+            margin-top: 3px
+            margin-right: 0
+            flex-wrap: nowrap
+        +xs 
+            padding: 5px
+  
+.box
+    min-height: 865px
+    background-color:#4F4F4F
+    display: flex
+    flex-direction: column
+    align-items: center
+    .best
+        @extend %features
+        font-size: 48px
+        line-height: 56px
+        +md 
+            font-size: 40px
+        +sm 
+            font-size: 32px
+    .circle-xbox
+        width: 63px
+        height: 64px
+        background: url("../images/circle-xbox.png")
+        margin-top: 64px
+        margin-bottom: 16px
+        +md 
+            width: 50px
+            height: 51px
+            background-size: cover
+    .games
+        @extend %features
+        font-size: 36px
+        line-height: 42px
+        +md 
+            font-size: 28px
+        +sm 
+            font-size: 20px
+
+.cards
+    padding-top: 43px     
+
+    .card
+        width: 318px
+        min-height: 420px
+        background-color: #FFFFFF
+        border: 1px solid #8DD83D
+        display: block
+        +lg
+            margin-bottom: 15px
+            margin: 15px auto
+        +sm
+            width: 100%
+            margin-top: 15px
+            &-image
+                +sm
+                    width: 100%
+
+        .mixer
+            padding: 53px 55px 66px 54px
+
+        .gold
+            padding: 33px 59px 33.36px 59px
+
+        .card-title
+            font:
+                size: 18px
+                weight: normal
+            line-height: 21px
+            color: #435766
+            text-transform: uppercase
+            padding-top: 16px
+            padding-left: 22px
+
+        .card-text
+            font-size: 24px
+            @extend %weight
+            line-height: 28px
+            color: #435766
+            text-transform: capitalize
+            padding-top: 13px
+            padding-left: 22px
+
+        .card-link
+            font-size: 16px
+            line-height: 21px
+            color: #FFFFFF
+            text-decoration: none
+            text-transform: capitalize
+            text-align: center
+            display: block
+            padding: 19px 23px 20px 23px
+            margin: 0 20px
+            background-color: #8DD83D
+            border-radius: 4px
+            +sm 
+                margin-bottom: 10px
+
+.joysticks
+    position: relative
+    .main-pic
+        width: 100%
+        min-height: 480px
+        object-fit: cover
+
+.joysticks-info
+    position: absolute
+    top: 100px
+    +lg 
+        top: 80px
+    +md 
+        top: 60px
+
+    .design
+        font-size: 48px
+        font-weight: lighter
+        line-height: 56px
+        color: #FFFFFF
+        text-transform: capitalize
+
+    .design-text
+        font-size: 24px
+        line-height: 28px
+        color: #FFFFFF
+
+    .design-link
+        font-size: 16px
+        line-height: 21px
+        color: #FFFFFF
+        text-decoration: none
+        text-transform: capitalize
+        display: inline-block
+        border-radius: 4px
+        padding: 20px 61px 19px 52px 
+        background: #828282
+        margin-top: 37px
+        margin-right: 15px
+        +lg 
+            padding: 15px 55px 15px 47px
+            
+        +sm 
+            margin: 20px auto
+
+    .accessories
+        @extend .design-link
+        padding: 19px 23px 20px 23px
+        background: #8DD83D
+        +lg 
+            padding: 15px 18px 15px 18px
+        
+        sm 
+            margin: 0 auto
+            display: flex
+            justify-content: center
+
+
+footer
+    min-height: 415px
+    background: #373A3C
+
+.list-container
+    display: flex
+    justify-content: space-around
+    +sm 
+        flex-wrap: wrap
+        text-align: center
+
+    .list
+        width: 730px
+        display: flex
+        flex-direction: column
+        padding: 58px 0 50px 0
+
+        &-title
+            font-weight: bold
+            font-size: 18px
+            line-height: 21px
+            color: #7DD42F
+            text-transform: uppercase
+            padding-bottom: 34px
+            +sm 
+                font-size: 25px
+
+        &-link
+            font-weight: normal
+            font-size: 14px
+            line-height: 16px
+            color: #FFFFFF
+            text-decoration: none
+            text-transform: capitalize
+            padding-bottom: 29px
+            +sm 
+                font-size: 21px
+
+        &-icon
+            width: 91px
+            display: flex
+            justify-content: space-between
+            +sm 
+                width: 185px
+                margin: 0 auto
+
+        &-facebook
+            width: 11px
+            height: 20px
+            background-image: url("../images/Faacebook.png")
+            +sm 
+                width: 20px
+                height: 36px
+
+        &-twitter
+            width: 21px
+            height: 18px
+            background-image: url("../images/Twitter.png")
+            +sm 
+                width: 40px
+                height: 34px
+
+        &-insta
+            width: 19px
+            height: 19px
+            background-image: url("../images/Instagram.png")
+            +sm 
+                width: 30px
+                height: 30px
+        
+
+        &-facebook,
+        &-twitter,
+        &-insta
+                display: inline-block
+                background-size: contain
+
+.line
+    display: flex
+    justify-content: center
+    .border
+        width: 1200px
+        mix-blend-mode: normal
+        opacity: 0.35
+        border: 1px solid #FFFFFF
+
+.last-container
+    max-width: 1200px
+    margin: 0 auto
+    display: flex
+    justify-content: space-between
+    +sm 
+        flex-direction: column
+        text-align: center
+    .last-text
+        font-weight: normal
+        font-size: 16px
+        line-height: 19px
+        color: #FFFFFF
+        text-transform: capitalize
+        padding: 19px 0 38px 0
+        +sm 
+            font-size: 25px
+            padding: 10px 0 15px 0
+
+button
+    border: 1px solid #8DD83D
+    border-radius: 50%
+    background: #8DD83D
+    padding: 5px
+    margin: 5px 5px 20px 5px
+
+.carousel-control-next-icon
+    background-image: url("../images/right-arrow.png") 
+
+.carousel-control-prev-icon
+    background-image: url("../images/left-arrow.png")
+

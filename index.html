@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>SASS</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img src="images/xbox.png" alt=""></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="menu">
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="#">Games</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Consoles</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Community</a>
+                            </li>
+
+                            <li class="nav-item dropdown">
+                                <a class="nav-link" href="#">
+                                    My xbox
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li class="dropdown-item">
+                                        <a href="#" class="dropdown-link">sign in</a>
+                                    </li>
+                                    <li class="dropdown-item">
+                                        <a href="#" class="dropdown-link">games for windows</a>
+                                    </li>
+                                    <li class="dropdown-item">
+                                        <a href="#" class="dropdown-link">xbox live gold</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="images/Star-Wars-Battlefront-II-combat.jpg" class="d-block w-100 main-picture" alt="battle">
+                <div class="carousel-caption d-md-block promo-container">
+                    <h1 class="main-title">star wars</h1>
+                        <h2 class="battlefront">battlefront II</h2>
+                        <a href="#" class="trailer">watch trailer</a>
+                        <a href="#" class="explore">explore games</a>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="images/Star-Wars-Battlefront-II-combat.jpg" class="d-block w-100" alt="battle">
+                <div class="carousel-caption d-md-block promo-container">
+                    <h1 class="main-title">star wars</h1>
+                        <h2 class="battlefront">battlefront II</h2>
+                        <a href="#" class="trailer">watch trailer</a>
+                        <a href="#" class="explore">explore games</a>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="images/Star-Wars-Battlefront-II-combat.jpg" class="d-block w-100" alt="battle">
+                <div class="carousel-caption d-md-block promo-container">
+                    <h1 class="main-title">star wars</h1>
+                        <h2 class="battlefront">battlefront II</h2>
+                        <a href="#" class="trailer">watch trailer</a>
+                        <a href="#" class="explore">explore games</a>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden"></span>
+        </button>
+    </div>
+
+    <div class="box">
+        <div class="circle-xbox"></div>
+        <h2 class="best">The best value</h2>
+        <h3 class="games">in games and entertainment</h3>
+        <div class="container">
+            <div class="cards">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="card">
+                            <img src="images/xbox-one-x.jpg" alt="play" class="card-image">
+                            <h3 class="card-title">xbox one x</h3>
+                            <p class="card-text">faster processing <br> smoother gameplay</p>
+                            <a href="#" class="card-link">explore consoles & accessories</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="card">
+                            <img src="images/mixer-logo.png" alt="mixer" class="card-image mixer">
+                            <h3 class="card-title"><span class="lower">mixer</span> <span class="stream">
+                                    streaming</span></h3>
+                            <p class="card-text">the next generation <br> of life game streaming</p>
+                            <a href="#" class="card-link">start watching <span class="lower"> mixer</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="card">
+                            <img src="images/1c93fdc8-0f06-4f34-a54c-7ac2a45c58ae.png" alt="gold"
+                                class="card-image gold">
+                            <h3 class="card-title"><span class="stream"> free games every month</span></h3>
+                            <p class="card-text">Get <span class="lower"> up to $700 in <br> free games</span></p>
+                            <a href="#" class="card-link">get free games</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="joysticks">
+        <img src="images/Rectangle.jpg" alt="joysticks" class="main-pic">
+        <div class="container">
+            <div class="joysticks-info">
+                <h4 class="design">xbox design lab</h4>
+                <p class="design-text">Make yours one in a billion with new colors, <br> metallic finishes and
+                    rubberized grips.</p>
+                <a href="#" class="design-link">design yours</a>
+                <a href="#" class="accessories">explore consoles & accessories</a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container list-container">
+            <div class="list">
+                <h6 class="list-title">xbox</h6>
+                <a href="#" class="list-link">support</a>
+                <a href="#" class="list-link">contact <span class="lower"> us</span></a>
+                <a href="#" class="list-link">privacy & <span class="lower"> cookies</span></a>
+                <a href="#" class="list-link">terms <span class="lower"> of use</span></a>
+            </div>
+            <div class="list">
+                <h6 class="list-title">developers</h6>
+                <a href="#" class="list-link">games</a>
+                <a href="#" class="list-link">windows 10</a>
+                <a href="#" class="list-link">creators program</a>
+                <a href="#" class="list-link">designed <span class="lower"> for</span> <span
+                        class="upper">xbox</span></a>
+            </div>
+            <div class="list">
+                <h6 class="list-title"><span class="stream">follow us</span></h6>
+                <nav class="list-icon">
+                    <a href="#" class="list-facebook"></a>
+                    <a href="#" class="list-twitter"></a>
+                    <a href="#" class="list-insta"></a>
+                </nav>
+            </div>
+        </div>
+        <div class="line">
+            <hr class="border">
+        </div>
+        <div class="last-container">
+            <span class="last-text">english (united states)</span>
+            <span class="last-text">© microsoft 2017</span>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <script src="JS/jquery-3.6.0.min.js"></script>
+    <script src="JS/bootstrap.min.js"></script>
+</body>
+
+</html>
